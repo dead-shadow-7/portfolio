@@ -3,6 +3,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Blog from "./pages/Blog";
 
 const router = createBrowserRouter([
   {
@@ -10,8 +11,9 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "about", element: <About /> },
+      //   { path: "about", element: <About /> },
       { path: "projects", element: <Projects /> },
+      { path: "blog", element: <Blog /> },
     ],
   },
 ]);

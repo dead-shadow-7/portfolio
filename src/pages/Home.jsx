@@ -1,5 +1,5 @@
-import React from "react";
 import "./Home.css";
+import SkillTags from "../components/common/SkillsTags";
 const Home = () => {
   return (
     <div>
@@ -9,26 +9,10 @@ const Home = () => {
         work, not just making them work. Interested in APIs, databases,
         scalability, and the tradeoffs behind real-world software.
       </p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
-      <p>. . .</p>
+      <h1>Experience</h1>
+      <h1>Skills</h1>
+      <SkillTags />
+      <h1>Education</h1>
     </div>
   );
 };
