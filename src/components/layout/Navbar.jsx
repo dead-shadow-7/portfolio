@@ -1,10 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import HomeIcon from "../icons/HomeIcon";
+import AboutIcon from "../icons/AboutIcon";
+import ProjectIcon from "../icons/ProjectIcon";
 
 const links = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
+  { name: <HomeIcon />, path: "/" },
+  { name: <AboutIcon />, path: "/about" },
+  { name: <ProjectIcon />, path: "/projects" },
 ];
 
 const Navbar = () => {
