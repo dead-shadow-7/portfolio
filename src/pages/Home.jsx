@@ -13,6 +13,16 @@ const Home = () => {
       <h1>Skills</h1>
       <SkillTags />
       <h1>Education</h1>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
     </div>
   );
 };
