@@ -1,7 +1,7 @@
 import "./Home.css";
 import avatarImage from "../assets/ProfileImage.png";
 import SkillTags from "../components/common/SkillsTags";
-
+import EYGDSIcon from "../assets/EYIcon.png";
 const Home = () => {
   return (
     <div className="home-page">
@@ -17,13 +17,25 @@ const Home = () => {
         If you got someting cool to work on let's talk
       </p>
       <div>
-        <a href="mailto:shivamrajput12119@gmail.com" className="contact-button">
+        <a href="mailto:shivamrajput.dev@proton.me" className="contact-button">
           {" "}
           Email Me
         </a>
       </div>
 
-      <h1 className="Heading">Experience</h1>
+      <div className="Experience-section">
+        <h1 className="Heading">Experience</h1>
+        <div className="experience-item">
+          <img src={EYGDSIcon} alt="Company Logo" className="company-logo" />
+          <div className="experience-content">
+            <div className="experience-details">
+              <h3 className="company-name">EY GDS</h3>
+              <p className="role-title">Web Developer Intern</p>
+            </div>
+            <div className="duration">Dec 2024 - Jan 2025</div>
+          </div>
+        </div>
+      </div>
       <h1 className="Heading">Skills</h1>
       <SkillTags />
       <h1 className="Heading">Education</h1>

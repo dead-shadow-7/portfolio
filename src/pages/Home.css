@@ -105,3 +105,55 @@ p {
     margin-bottom: 1.5rem;
   }
 }
+
+.Experience-section {
+  padding: 0 12rem;
+}
+.experience-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-radius: 72px;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.experience-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.25rem; */
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.role-title {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: -0.5rem;
+}
+
+.duration {
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0.65;
+}
