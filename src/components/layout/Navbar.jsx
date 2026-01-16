@@ -40,14 +40,14 @@ const Navbar = () => {
           label="LinkedIn"
           icon={<LinkedInIcon />}
         />
-
+        <div className="navbar__divider" />
         <li>
           <button
             className="nav-icon theme-toggle"
             onClick={toggleTheme}
             aria-label="Toggle theme"
           >
-            {theme === "dark" ? <LightThemeIcon /> : <DarkThemeIcon />}
+            {theme === "dark" ? <DarkThemeIcon /> : <LightThemeIcon />}
           </button>
         </li>
       </ul>

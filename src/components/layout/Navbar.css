@@ -9,23 +9,24 @@
   position: sticky;
   top: 16px;
   z-index: 100;
-  color: #1f2937;
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
+
   width: fit-content;
   margin: 0 auto;
   padding: 0.6rem 1rem;
 
-  background: rgba(255, 255, 255, 0.18);
+  background: var(--navbar-bg);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
 
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--navbar-border);
+  box-shadow: 0 8px 32px var(--navbar-shadow),
+    inset 0 0 0 1px var(--navbar-inset);
 }
 
 .navbar__group {
@@ -40,7 +41,7 @@
 .navbar__divider {
   width: 1px;
   height: 24px;
-  background: rgba(255, 255, 255, 0);
+  background: var(--navbar-divider);
 }
 
 /* Icon buttons */
@@ -51,8 +52,9 @@
 
   width: 36px;
   height: 36px;
+
   border-radius: 50%;
-  color: #000000; /* ensure a solid, visible color */
+  color: inherit;
   text-decoration: none;
 
   background: transparent;
@@ -63,18 +65,24 @@
 }
 
 .nav-icon:hover {
-  background: rgba(255, 255, 255, 0.22);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  background: var(--navbar-hover);
+  box-shadow: 0 4px 12px var(--navbar-shadow);
   transform: translateY(-1px);
 }
 
 .nav-icon.active {
-  background: rgba(255, 255, 255, 0.35);
+  background: var(--navbar-active);
 }
 
 .nav-icon svg {
   width: 18px;
   height: 18px;
+  padding: 0;
+}
+
+.nav-icon svg,
+.nav-icon svg * {
+  padding: 0;
 }
 
 /* Theme toggle inherits same styling */
