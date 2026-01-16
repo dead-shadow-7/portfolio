@@ -2,6 +2,7 @@ import "./Home.css";
 import avatarImage from "../assets/ProfileImage.png";
 import SkillTags from "../components/common/SkillsTags";
 import EYGDSIcon from "../assets/EYIcon.png";
+import UniversityLogo from "../assets/SPPULogo.jpg";
 const Home = () => {
   return (
     <div className="home-page">
@@ -16,10 +17,17 @@ const Home = () => {
         <br />
         If you got someting cool to work on let's talk
       </p>
-      <div>
+      <div className="contact-buttons">
         <a href="mailto:shivamrajput.dev@proton.me" className="contact-button">
           {" "}
           Email Me
+        </a>
+        <a
+          href="https://www.linkedin.com/in/shivamrajput12119/"
+          className="contact-button"
+        >
+          {" "}
+          Let's Connect{" "}
         </a>
       </div>
 
@@ -36,19 +44,30 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <h1 className="Heading">Skills</h1>
-      <SkillTags />
-      <h1 className="Heading">Education</h1>
-      <p>...</p>
-      <p>...</p>
-      <p>...</p>
-      <p>...</p>
-      <p>...</p>
-      <p>...</p>
-      <p>...</p>
-      <p>...</p>
-      <p>...</p>
-      <p>...</p>
+
+      <div className="Skills-section">
+        <h1 className="Heading">Skills</h1>
+        <SkillTags />
+      </div>
+      <div className="Education-section">
+        <h1 className="Heading">Education</h1>
+        <div className="education-item">
+          <img
+            src={UniversityLogo}
+            alt="University Logo"
+            className="university-logo"
+          />
+          <div className="education-content">
+            <div className="education-details">
+              <h3 className="college-name">AISSMS IOIT</h3>
+              <p className="university-degree">
+                B.Tech in Computer Engineering
+              </p>
+            </div>
+            <div className="duration">2022 - 2026</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
