@@ -3,6 +3,7 @@ import avatarImage from "../assets/ProfileImage.png";
 import SkillTags from "../components/common/SkillsTags";
 import EYGDSIcon from "../assets/EYIcon.png";
 import UniversityLogo from "../assets/SPPULogo.jpg";
+import Footer from "../components/common/Footer";
 const Home = () => {
   return (
     <div className="home-page">
@@ -68,6 +69,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
