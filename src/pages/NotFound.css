@@ -1,0 +1,118 @@
+.not-found {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+}
+
+/* ── Card ─────────────────────────────────────────────────── */
+.not-found__card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.not-found__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  background: var(--border);
+}
+
+.not-found__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.not-found__dot.red {
+  background: #ff5f57;
+}
+.not-found__dot.yellow {
+  background: #febc2e;
+}
+.not-found__dot.green {
+  background: #28c840;
+}
+
+.not-found__bar-label {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  opacity: 0.5;
+  color: var(--text-primary);
+  font-family: "Fira Code", "Cascadia Code", monospace;
+}
+
+.not-found__body {
+  padding: 1.5rem 1.75rem;
+  font-family: "Fira Code", "Cascadia Code", "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+/* ── Content ──────────────────────────────────────────────── */
+.nf-error {
+  color: var(--text-primary);
+  margin: 0 0 0.25rem;
+}
+
+.nf-tag.error {
+  color: #f87171;
+  font-weight: 700;
+}
+
+.nf-string {
+  color: #34d399;
+}
+
+.nf-label {
+  color: var(--text-secondary);
+  opacity: 0.55;
+  margin: 0.25rem 0 0.1rem;
+  font-size: 0.8rem;
+}
+
+.nf-stack {
+  color: var(--text-secondary);
+  opacity: 0.45;
+  margin: 0;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* ── Suggestions ──────────────────────────────────────────── */
+.nf-suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nf-suggestions li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nf-arrow {
+  color: #60a5fa;
+}
+
+.nf-link {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nf-link:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* ── Mobile ───────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .not-found__body {
+    padding: 1.25rem;
+    font-size: 0.78rem;
+  }
+}
